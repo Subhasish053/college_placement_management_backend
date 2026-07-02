@@ -40,7 +40,7 @@ const adminRoutes = require("./routes/adminRoutes");
 connectDB();
 
 // Middleware
-console.log("FRONTEND_URL =", process.env.FRONTEND_URL);
+
 app.use(
     cors({
         origin: function (origin, callback) {
