@@ -70,6 +70,15 @@ app.get("/", (req, res) => {
   res.send("Placement Management API Running...");
 });
 
+app.get("/health", (req, res) => {
+
+    res.status(200).json({
+        success: true,
+        message: "Server is healthy"
+    });
+
+});
+
 // Middleware Route for user authentication
 app.get("/api/profile", protect, (req, res) => {
 
